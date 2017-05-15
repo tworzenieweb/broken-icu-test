@@ -35,3 +35,18 @@ It means that despite the precision set to 4 digits it is reseting that to 2 whe
 It was tested with version 58.2 without success.
 
 Also attached php file using pecl intl library that has the same issue.
+
+If you run:
+
+`php numberFormatterTest.php`
+
+You will receive:
+
+
+$45
+€45.00
+45 €
+45,00 $US
+
+
+Which is wrong since FRACTION_DIGITS is set to 0.
