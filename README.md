@@ -19,15 +19,19 @@ run:
 
 then run:
 
+```
 ./test
+```
 
 You should see result like this
 
+```
 Digits: 4
 GBP: £123.4500
 Digits: 4
 EUR: €123.45
 Digits: 4
+```
 
 
 It means that despite the precision set to 4 digits it is reseting that to 2 when switching for EUR currency.
@@ -42,11 +46,12 @@ If you run:
 
 You will receive:
 
-
+```
 $45
 €45.00
 45 €
 45,00 $US
+```
 
 
-Which is wrong since FRACTION_DIGITS is set to 0.
+Which is wrong since `FRACTION_DIGITS` is set to 0.
